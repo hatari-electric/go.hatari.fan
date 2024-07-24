@@ -24,6 +24,7 @@ excludes = [
 ]
 
 [modules."go.hatari.fan"]
+args = ["serve"]
 builder = "go/basic"
 cmd = "go.hatari.fan"
 image = "ghcr.io/hatari-electric/go.hatari.fan"
