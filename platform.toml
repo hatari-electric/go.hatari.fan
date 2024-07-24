@@ -3,6 +3,8 @@ platform = "auto"
 repository = "github.com/hatari-electric/go.hatari.fan"
 strategy = "semver"
 
+environments = ["go.hatari.fan"]
+
 excludes = [
   "*.docker",
   "*.local",
@@ -24,5 +26,6 @@ excludes = [
 [modules."go.hatari.fan"]
 builder = "go/basic"
 cmd = "go.hatari.fan"
+image = "ghcr.io/hatari-electric/go.hatari.fan"
 timeout = "1m0s"
 workdir = "."
