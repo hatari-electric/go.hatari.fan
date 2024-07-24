@@ -1,0 +1,28 @@
+maintainer = "Chakrit Wichian <chakrit@prodigy9.co>"
+platform = "auto"
+repository = "github.com/hatari-electric/go.hatari.fan"
+strategy = "semver"
+
+excludes = [
+  "*.docker",
+  "*.local",
+  ".dockerignore",
+  ".git",
+  ".github",
+  ".gitignore",
+  ".idea",
+  ".svelte-kit",
+  ".vscode",
+  "build",
+  "deploy",
+  "dist",
+  "node_modules",
+  "platform.toml",
+  "target",
+]
+
+[modules."go.hatari.fan"]
+builder = "go/basic"
+cmd = "go.hatari.fan"
+timeout = "1m0s"
+workdir = "."
